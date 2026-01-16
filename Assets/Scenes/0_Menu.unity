@@ -2091,8 +2091,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 248759659}
-  - component: {fileID: 248759661}
   - component: {fileID: 248759660}
+  - component: {fileID: 248759661}
   m_Layer: 5
   m_Name: Records
   m_TagString: Untagged
@@ -2159,9 +2159,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 248759658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -2190,11 +2190,8 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1393745100}
-  toggleTransition: 1
-  graphic: {fileID: 0}
-  m_Group: {fileID: 0}
-  onValueChanged:
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 741843212}
@@ -2209,7 +2206,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
 --- !u!1 &256962169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,7 +2571,7 @@ MonoBehaviour:
   PuntuacionDardos5: 0
   PuntuacionFlautaTotalCF: 0
   PuntuacionFlautaSeccionesCF: 
-  RutaJson: 
+  RutaDeGuardado: 
 --- !u!4 &291592606
 Transform:
   m_ObjectHideFlags: 0
@@ -4630,8 +4626,8 @@ RectTransform:
   - {fileID: 968530220}
   - {fileID: 1468259497}
   - {fileID: 149261175}
-  - {fileID: 2034414860}
   - {fileID: 248759659}
+  - {fileID: 2034414860}
   - {fileID: 817012880}
   m_Father: {fileID: 552196081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4714,7 +4710,7 @@ MonoBehaviour:
   _Creditos: {fileID: 2034414861}
   _FondoCreditos: {fileID: 105282249}
   _PanelCreditos: {fileID: 817012879}
-  _ToggleRecords: {fileID: 248759661}
+  _BotonRecords: {fileID: 248759661}
   _FondoRecords: {fileID: 1393745100}
   _RecordDardos3: {fileID: 1999071015}
   _RecordDardos5: {fileID: 2032103648}

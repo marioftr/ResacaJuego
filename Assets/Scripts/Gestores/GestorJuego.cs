@@ -97,7 +97,6 @@ public class GestorJuego : MonoBehaviour
         OcultarTodos();
         PanelRecords.SetActive(true);
         GestorSonido.Instancia.ReproducirMusicaDeFondo("MenuOpciones");
-        GestorInterfaz.Instancia.AbrirRecords();
     }
     public static void OcultarTodos()
     {

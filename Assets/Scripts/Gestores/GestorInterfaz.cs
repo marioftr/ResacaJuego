@@ -16,7 +16,7 @@ public class GestorInterfaz : MonoBehaviour
     [SerializeField] private Toggle _Creditos;
     [SerializeField] private Image _FondoCreditos;
     [SerializeField] private GameObject _PanelCreditos;
-    [SerializeField] private Toggle _ToggleRecords;
+    [SerializeField] private Button _BotonRecords;
     [SerializeField] private Image _FondoRecords;
     
     [SerializeField] private TMP_Text _RecordDardos3;
@@ -24,7 +24,7 @@ public class GestorInterfaz : MonoBehaviour
     [SerializeField] private TMP_Text _RecordFlautaCF;
     [SerializeField] private TMP_Text _RecordFlautaSeccionesCF;
     
-    private Color _Naranja = new Color(0.8f, 0.2901961f, 0f, 1f);
+    private readonly Color _Naranja = new Color(0.8f, 0.2901961f, 0f, 1f);
 
     private void Awake()
     {
@@ -80,34 +80,37 @@ public class GestorInterfaz : MonoBehaviour
         bool recordsDisponible = GestorBase.Instancia.EstaDesbloqueado(0) && GestorBase.Instancia.EstaDesbloqueado(1);
         if (recordsDisponible)
         {
-            _ToggleRecords.isOn = true;
-            _ToggleRecords.enabled = true;
+            _BotonRecords.interactable = true;
             _FondoRecords.color = _Naranja;
         }
         else
         {
-            _ToggleRecords.isOn = false;
-            _ToggleRecords.enabled = false;
+            _BotonRecords.interactable = false;
             _FondoRecords.color = Color.gray;
         }
     }
     public void AbrirRecords()
     {
-        if (!_ToggleRecords.isOn) return;
-        
         GestorJuego.MostrarMenuRecords();
         GestorBase.Instancia.CargarPartidaManual();
-        
-        Instancia._RecordDardos3.text = GestorBase.Instancia.PuntuacionDardos3.ToString();
-        Instancia._RecordDardos5.text = GestorBase.Instancia.PuntuacionDardos5.ToString();
-        Instancia._RecordFlautaCF.text = GestorBase.Instancia.PuntuacionFlautaTotalCF.ToString();
-        int[] cf = new int[4]
+
+        var dardos3 = GestorBase.Instancia.PuntuacionDardos3;
+        var dardos5 = GestorBase.Instancia.PuntuacionDardos5;
+        var flautaCF = GestorBase.Instancia.PuntuacionFlautaTotalCF;
+        var cf = new int[4]
         {
             GestorBase.Instancia.PuntuacionFlautaSeccionesCF[0],
             GestorBase.Instancia.PuntuacionFlautaSeccionesCF[1],
             GestorBase.Instancia.PuntuacionFlautaSeccionesCF[2],
             GestorBase.Instancia.PuntuacionFlautaSeccionesCF[3]
         };
-        Instancia._RecordFlautaSeccionesCF.text = new string($"{cf[0]}+{cf[1]}+{cf[2]}+{cf[3]}");
+
+        _RecordDardos3.text = dardos3.ToString();
+        
+        _RecordDardos3.text = $"{dardos3} {(dardos3 == 1 ? "punto" : "puntos")}";
+        _RecordDardos5.text = $"{dardos5} {(dardos5 == 1 ? "punto" : "puntos")}";
+        _RecordFlautaCF.text = $"{flautaCF} {(flautaCF == 1 ? "error" : "errores")}";
+
+        _RecordFlautaSeccionesCF.text = $"({cf[0]}+{cf[1]}+{cf[2]}+{cf[3]})";
     }
 }
