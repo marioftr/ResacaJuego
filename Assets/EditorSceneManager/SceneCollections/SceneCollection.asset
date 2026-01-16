@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496ebfc3b80d08b4d83e8b6c84a74e6f, type: 3}
+  m_Name: SceneCollection
+  m_EditorClassIdentifier: 
+  scenes:
+  - sceneName: 0_Menu
+    scenePath: Assets/Scenes/0_Menu.unity
+    savedColor: {r: 0, g: 0, b: 0, a: 0}
+    isHeader: 0
+  - sceneName: 1_Juego
+    scenePath: Assets/Scenes/1_Juego.unity
+    savedColor: {r: 0, g: 0, b: 0, a: 0}
+    isHeader: 0
+  - sceneName: 2_Habitacion
+    scenePath: Assets/Scenes/2_Habitacion.unity
+    savedColor: {r: 0, g: 0, b: 0, a: 0}
+    isHeader: 0
+  - sceneName: 3_Dardos
+    scenePath: Assets/Scenes/3_Dardos.unity
+    savedColor: {r: 0, g: 0, b: 0, a: 0}
+    isHeader: 0
+  - sceneName: 4_Flauta
+    scenePath: Assets/Scenes/4_Flauta.unity
+    savedColor: {r: 0, g: 0, b: 0, a: 0}
+    isHeader: 0

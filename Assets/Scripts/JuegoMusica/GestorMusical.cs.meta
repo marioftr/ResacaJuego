@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 09f9eadccd4bb974b81f11907a986194
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _PanelInicio: {instanceID: 0}
+  - _PanelTutorial: {instanceID: 0}
+  - _PanelJuego: {instanceID: 0}
+  - _PanelFinal: {instanceID: 0}
+  - _SonidoError: {fileID: 8300000, guid: 48591255a5d2ee442a16ca62d3f55824, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

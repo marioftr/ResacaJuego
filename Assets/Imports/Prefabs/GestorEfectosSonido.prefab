@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7873655194494629848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8064719817781485046}
+  - component: {fileID: 4961069040956412278}
+  m_Layer: 0
+  m_Name: GestorEfectosSonido
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8064719817781485046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873655194494629848}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4961069040956412278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873655194494629848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db26527f7fa64641b6d07f51d50cb4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GestorEfectosSonido
+  _EfectosSonido: []
+  _EfectoLanzarDardo: {fileID: 8300000, guid: 8dacf1197322dda4f93aa998099083a8, type: 3}
+  _EfectoClavarDardo: {fileID: 8300000, guid: f436b9592d5ce194eab41dc6b1ea979d, type: 3}
+  _EfectoBoton: {fileID: 8300000, guid: f98d35dcdfb4eca42abe71a0014690d0, type: 3}
+  _EfectoClickGrave: {fileID: 8300000, guid: ad3761212acdf664aa17ac315fde9525, type: 3}
+  _EfectoClickAgudo: {fileID: 8300000, guid: f49ab0cfad064d944a1520e83fb90c30, type: 3}
+  _EfectoPuertaAbierta: {fileID: 8300000, guid: 4000d5afc24432c4899053a27aec8918, type: 3}
+  _EfectoPuertaCerrada: {fileID: 8300000, guid: d2b2f3f079406ad408c74b5af93ce642, type: 3}
+  _EfectoPuertaBloqueada: {fileID: 8300000, guid: 0c4b2996325b9634d8e00dfde142c8fc, type: 3}
+  _EfectoArmarioBloqueado: {fileID: 8300000, guid: 4a70e54cc57885c49a4c889a4800ac84, type: 3}
+  _EfectoAcordeGuitarra: {fileID: 8300000, guid: 45eedbff022683741b0b3c12d4f03739, type: 3}
+  _EfectoLucesOn: {fileID: 8300000, guid: 286cc5f0158596745a7c980880e05cff, type: 3}
+  _EfectoLucesOff: {fileID: 8300000, guid: 38ab8c2894981b24d9d88011211faabd, type: 3}
+  _SalidaEfectos: {fileID: -4497614761280624457, guid: 028a0e380f06f1347ab7c3c105d6e231, type: 2}
+  _VolumenEfectos: 1

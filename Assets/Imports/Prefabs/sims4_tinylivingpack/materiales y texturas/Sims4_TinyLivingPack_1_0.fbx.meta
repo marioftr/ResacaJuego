@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: 64c1460b7b7402e40b1628848edbddfd
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE
+    second: {fileID: 2100000, guid: 6ffefc8eaf4d4e14ea091c364cf47cee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.002
+    second: {fileID: 2100000, guid: 9659fca09808af6459aa050ca16b93f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.004
+    second: {fileID: 2100000, guid: 21f76f46fa13f9148ac16db32699481e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.005
+    second: {fileID: 2100000, guid: 6b967134894d4974bb8bcc9f4e5f85f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.007
+    second: {fileID: 2100000, guid: 5f92327c8ad05ea4a87aee16a851adeb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.009
+    second: {fileID: 2100000, guid: 33af6c40d8a483848bcfa4691559cb5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.010
+    second: {fileID: 2100000, guid: fc9d561fea88e254381c371eb1a72d21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.011
+    second: {fileID: 2100000, guid: 33b94137c5533234a889a81b9dbe2eb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.013
+    second: {fileID: 2100000, guid: 19a16f2c56818a943b4e8e6ea8cde0d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.014
+    second: {fileID: 2100000, guid: e625acf69c9dedf4d89ae48b1a35243e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.016
+    second: {fileID: 2100000, guid: 8d7ca074308e5cb4b85a18e41b27fd2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.017
+    second: {fileID: 2100000, guid: 51b742b6179467c48af10d1cd402e212, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.019
+    second: {fileID: 2100000, guid: 1c64ce332641b5c4c965dcc88bee22ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.021
+    second: {fileID: 2100000, guid: d4c25d35ec9743b4b86643b522d6c734, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.022
+    second: {fileID: 2100000, guid: d661db6c5f43a3e4cbfc4ecbd15569a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.024
+    second: {fileID: 2100000, guid: f6c118ed4ae35584f8f202028c8621a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.025
+    second: {fileID: 2100000, guid: 9077eabaeda7335428146efbda3075bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.027
+    second: {fileID: 2100000, guid: 815ab352bafc8d34d835aa9a27559df8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.029
+    second: {fileID: 2100000, guid: 37dd8841693ceb443accbd18b63b1a9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.031
+    second: {fileID: 2100000, guid: b6d12d0e12f02334197e659b108a9095, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.034
+    second: {fileID: 2100000, guid: ce32463fa9c499d44b5848d8cc88e9e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.038
+    second: {fileID: 2100000, guid: f823ebe7b7d371b45b9d6cd90c3dd847, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.039
+    second: {fileID: 2100000, guid: e90b2d284bd3ee6428a4a37e83207675, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.040
+    second: {fileID: 2100000, guid: 77e335d2213bca8498340af2fcc89700, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.042
+    second: {fileID: 2100000, guid: d22bda4bea4a6be438a9b93a0c21dc64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.043
+    second: {fileID: 2100000, guid: 7c646415b85e6ba4fbb11b6e834f5ed3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.045
+    second: {fileID: 2100000, guid: be2e95415edf5524baae5fb53589abd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.046
+    second: {fileID: 2100000, guid: 082dea470f0e5f644a9989a9a6c2ba34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.048
+    second: {fileID: 2100000, guid: f8b009b0ef10dbb4686282e1a18f1067, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.051
+    second: {fileID: 2100000, guid: 6495b00ee7edc2c4da61ecd2248b8cc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.052
+    second: {fileID: 2100000, guid: fb3b8b3829c23534791d8d668c9b9532, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.054
+    second: {fileID: 2100000, guid: cb4ef0be0c796d24094e1ea3eb913df4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.055
+    second: {fileID: 2100000, guid: 8fe704af1788fe2418b2e17f68ff1204, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.057
+    second: {fileID: 2100000, guid: 6c11bc6b42566ba40a14ec6a0b84e168, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.059
+    second: {fileID: 2100000, guid: 03f8a3f42d2845f4299cc9dda6e3ce97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.061
+    second: {fileID: 2100000, guid: 5b61bb27682538e4fae2363484c1d43c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.062
+    second: {fileID: 2100000, guid: a4d7758ab5f3f074aa506ee0b74ff1ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.064
+    second: {fileID: 2100000, guid: 7eda7aa583e1fda4ca526c4b48f11856, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.067
+    second: {fileID: 2100000, guid: 1dc3b5925aef5e249802f3d78d376405, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 4d0597a12072cc64d87501b7aa0b736c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_ScreenOFF
+    second: {fileID: 2100000, guid: 08bceec9734cb634099a90af30868021, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BotanicalBookendsA1
+    second: {fileID: 2800000, guid: 0a1937907e4df264982704b189272272, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CompactLavatoryA1
+    second: {fileID: 2800000, guid: edd645dbcdf62ef44acc41b3c4e1e25e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ContemporaryCarpetA1
+    second: {fileID: 2800000, guid: 602091b6eb2a4054384dcfbf7f733849, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DonTrippLightFixtureA1
+    second: {fileID: 2800000, guid: 4a6c33e3a1b8ec640b1fd04e258754ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JustALittlePeekA1
+    second: {fileID: 2800000, guid: 462d244880efe914087be59bc83d81b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LampWithoutStorageA1
+    second: {fileID: 2800000, guid: 5e75cdfc8eb013840a95beccdcb1c22e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LovelyArmchairA2
+    second: {fileID: 2800000, guid: 8f7e5c6f2ad2c0e45b6c4dc607dd9a59, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LovelyDiningChairA1
+    second: {fileID: 2800000, guid: 9c49b8b4cac581c49983a9be15975bb5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LovelyLoveseatA4
+    second: {fileID: 2800000, guid: 6f82c3b024ce44f44b6ea866c0a39e5a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MediaMarathonerA1
+    second: {fileID: 2800000, guid: 707255204f1c36a4a881e2f02b63861d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MediaMarathoner_AllontheWallA1
+    second: {fileID: 2800000, guid: 68f1d6356278a0749a1f115d04f7ced6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MiracleMirror
+    second: {fileID: 2800000, guid: fc10631b53e6d7443b2eb12bb6ba04e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ModernPouffeA3
+    second: {fileID: 2800000, guid: 79ff4f90dae126040965dbbaef6406fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MurphyBedLoveSeatA1
+    second: {fileID: 2800000, guid: 4a4b9faffa1339e46a7d32ca60d33c25, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MurphyBedLoveSeatB1
+    second: {fileID: 2800000, guid: 237085d4f109f6549b28fb55341f1b72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MyKindaZenA1
+    second: {fileID: 2800000, guid: 928366c0b7104f84da4b722afb2455c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NotATableEndA1
+    second: {fileID: 2800000, guid: 0f959dc9611916d4798c4becdc7c00cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NotQuiteOrbitalSittingA1
+    second: {fileID: 2800000, guid: 4275c12fb3995e349a6c23c6c2133424, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OpenShelfA1
+    second: {fileID: 2800000, guid: 721728161441bc5429592121bfea2adb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OrbitalHighDining
+    second: {fileID: 2800000, guid: 6c63caca96747724aa755d39be060220, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerTowerBookcaseA1
+    second: {fileID: 2800000, guid: 69ffcbc892b5ee74bb6bde928695ac5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerTowerDresserA1
+    second: {fileID: 2800000, guid: 63ecc429721287a4ea3ad08b865ac01f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SimpleandCleanArtA1
+    second: {fileID: 2800000, guid: 3886e427a43b3234caccb82214342f74, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SirCumferenceCoffeeTableA1
+    second: {fileID: 2800000, guid: 8838e335cc02275499e56f05d5e8c816, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Space-SavingSingleA1
+    second: {fileID: 2800000, guid: 31a2fb30745658642bb554d4bd1bc207, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: StubbyCubbyDresserA1
+    second: {fileID: 2800000, guid: a33d574c864d3424fbf12dca6b16e0a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TheSinkzBathroomVanityA1
+    second: {fileID: 2800000, guid: 1debe1b3b49c65242884bd62077a06e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TieredShelfA2
+    second: {fileID: 2800000, guid: 23fddc6e15d62ed4ca407182b70c865d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TinyConsoleA2
+    second: {fileID: 2800000, guid: a690715dca251f243928ce962036290e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TinyDeskForTinyLivingA2
+    second: {fileID: 2800000, guid: d734ebd4eb372bf4d8d01f0882c0f350, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: VerticalMiniGardenA1
+    second: {fileID: 2800000, guid: de9297a669f38c74e93f9d0f4381ef79, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 1
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 3
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

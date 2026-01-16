@@ -1,0 +1,537 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6422314405540483591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7848376142808299294}
+  m_Layer: 0
+  m_Name: Papel Higienico
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7848376142808299294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422314405540483591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8456019452660504608}
+  - {fileID: 3312698995450331856}
+  - {fileID: 6550106505497016672}
+  - {fileID: 9118970829458510601}
+  - {fileID: 8550593029807521583}
+  - {fileID: 6927171287665593262}
+  - {fileID: 1540599739344141157}
+  - {fileID: 2912026504633429976}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2105367417442482912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7848376142808299294}
+    m_Modifications:
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813641306258253772, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_Name
+      value: Toilet_paper (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+--- !u!4 &1540599739344141157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+  m_PrefabInstance: {fileID: 2105367417442482912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2323597250477895261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7848376142808299294}
+    m_Modifications:
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813641306258253772, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_Name
+      value: Toilet_paper (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+--- !u!4 &2912026504633429976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+  m_PrefabInstance: {fileID: 2323597250477895261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2715558293406860117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7848376142808299294}
+    m_Modifications:
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813641306258253772, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_Name
+      value: Toilet_paper (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+--- !u!4 &3312698995450331856 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+  m_PrefabInstance: {fileID: 2715558293406860117}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5958311680611088613
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7848376142808299294}
+    m_Modifications:
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813641306258253772, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_Name
+      value: Toilet_paper (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+--- !u!4 &6550106505497016672 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+  m_PrefabInstance: {fileID: 5958311680611088613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7526863372007655979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7848376142808299294}
+    m_Modifications:
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813641306258253772, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_Name
+      value: Toilet_paper (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+--- !u!4 &6927171287665593262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+  m_PrefabInstance: {fileID: 7526863372007655979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8564611094079574668
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7848376142808299294}
+    m_Modifications:
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.687883
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813641306258253772, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_Name
+      value: Toilet_paper (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+--- !u!4 &9118970829458510601 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+  m_PrefabInstance: {fileID: 8564611094079574668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9011521632172431781
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7848376142808299294}
+    m_Modifications:
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.687883
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813641306258253772, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_Name
+      value: Toilet_paper
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+--- !u!4 &8456019452660504608 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+  m_PrefabInstance: {fileID: 9011521632172431781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9151108562526027434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7848376142808299294}
+    m_Modifications:
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813641306258253772, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+      propertyPath: m_Name
+      value: Toilet_paper (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+--- !u!4 &8550593029807521583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 600821317230231941, guid: d009869eee71fd14ea3a73d7bae82f75, type: 3}
+  m_PrefabInstance: {fileID: 9151108562526027434}
+  m_PrefabAsset: {fileID: 0}
