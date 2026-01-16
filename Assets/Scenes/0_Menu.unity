@@ -2571,6 +2571,11 @@ MonoBehaviour:
   PuntuacionDardos5: 0
   PuntuacionFlautaTotalCF: 0
   PuntuacionFlautaSeccionesCF: 
+  PuertaAbiertaHabitacion: 0
+  "PuertaAbiertaBa\xF1o": 0
+  LuzMesitaHabitacionOn: 0
+  LuzHabitacionOn: 0
+  "LuzBa\xF1oOn": 0
   RutaDeGuardado: 
 --- !u!4 &291592606
 Transform:
@@ -8696,11 +8701,11 @@ MonoBehaviour:
     a:\n\n- Emerald Eel (y a todos los integrantes), por su colecci\xF3n de modelos
     PS1 gratu\xEDtos, claves para la est\xE9tica low-poly lograda en este proyecto.\n\n-
     Setuniman, por su colecci\xF3n de m\xFAsica y efectos de sonido, predominantes
-    en la banda sonora.\n\n- Juanxon (Editor Scene Manager), Mattias Edlund (Unity
-    Mesh Simplifier), Alexander Ameye (Free Outline) y LW Games (Git Anchorpoint),
-    por sus correspondientes Assets de Unity, que aceleraron la creaci\xF3n del juego.\n\n-
-    Kirby y CEI., por otorgarme la capacidad y los medios para llevar a cabo esta
-    producci\xF3n."
+    en la banda sonora.\n\n- Juanxon (Editor Scene Manager), Alexander Ameye (Free
+    Outline), Mattias Edlund (Mesh Simplifier), Critsoft (Mesh Combiner) y LW Games
+    (Anchorpoint), por sus correspondientes Assets de Unity, que aceleraron la creaci\xF3n
+    del juego.\n\n- Kirby y CEI., por otorgarme la capacidad y los medios para llevar
+    a cabo esta producci\xF3n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 1995a1d120698d147ab9abcb97c76a7c, type: 2}

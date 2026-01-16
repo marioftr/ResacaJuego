@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: ad0a751c8d987014ea18492461bdb478
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp ceramic
+    second: {fileID: 2100000, guid: 830a55895cfb3a149a1b14aea3fd8540, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp glass
+    second: {fileID: 2100000, guid: a8b413c5d88fc5148b4914af3f71a92f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp med
+    second: {fileID: 2100000, guid: d3556355186d70a47b831d1c990ccf62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp med 4
+    second: {fileID: 2100000, guid: 0a45b67ef2def8a49b1c632469a44307, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp med.2
+    second: {fileID: 2100000, guid: 657ab8a4d9355ce4a8541a54b6c8e11f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp med.3
+    second: {fileID: 2100000, guid: b250f8ebc9ec9ca4793f9a55c199743d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp plastic
+    second: {fileID: 2100000, guid: 02489656be0d4134d8e76703f2af0277, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lemp glass emishen
+    second: {fileID: 2100000, guid: faa1a7136f14c894696d91b8bb0cb88d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp ceramic_Base_color
+    second: {fileID: 2800000, guid: f71267d66b8745042bef9b2a1c73e301, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp ceramic_Metallic
+    second: {fileID: 2800000, guid: 89feebef74436354cbc842d1b1713dac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp ceramic_Normal
+    second: {fileID: 2800000, guid: fba5ddd31d2f40b4b876b119488122b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp ceramic_Roughness
+    second: {fileID: 2800000, guid: 0d3a9291263d00c45b70078f6e25ebb1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp glass_Base_color
+    second: {fileID: 2800000, guid: 031fa7276c12d134fbb8ed3d7641799c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp glass_Metallic
+    second: {fileID: 2800000, guid: 7e72d6dbc16c56049aa42fd6dbb3ed38, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp glass_Normal
+    second: {fileID: 2800000, guid: d10d19d1cdb9bbf4d9cc685b0429713f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp glass_Opacity
+    second: {fileID: 2800000, guid: 9254bba337340e64cbadf7b065c50bca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp glass_Roughness
+    second: {fileID: 2800000, guid: 39baae9c0a3365542b8584b1f87f01a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med 4_Base_color
+    second: {fileID: 2800000, guid: ebe78b1dc3c3f8e4589e2e2e3d06f5ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med 4_Metallic
+    second: {fileID: 2800000, guid: 3e5f7ae5d4479ff4ca87eb572db0c0e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med 4_Normal
+    second: {fileID: 2800000, guid: d5328c83f2f3a4346a0abc2e8f80394a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med 4_Roughness
+    second: {fileID: 2800000, guid: 35adbccd1fdbe7241b1f8cf1c52b765d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med.2_Base_color
+    second: {fileID: 2800000, guid: 904f336862e74da4a8573c059fd462db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med.2_Normal
+    second: {fileID: 2800000, guid: c11ac800ff58ed243853288993d78c4e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med.2_Roughness
+    second: {fileID: 2800000, guid: 362f806c79cbbd947af433d203459310, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med.3_Base_color
+    second: {fileID: 2800000, guid: 2d8ab62a0bec0144bb9a5d5664a92697, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med.3_Metallic
+    second: {fileID: 2800000, guid: c7cfb9564f2b50d4991a215664bd3b9a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med.3_Normal
+    second: {fileID: 2800000, guid: 512dc590e2c17e044a2721616f262bc6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med.3_Roughness
+    second: {fileID: 2800000, guid: cd19a91278c08eb489235adc626403b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med_Base_color
+    second: {fileID: 2800000, guid: 31065a4ed43f0bb4a872198efb36a474, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med_Metallic
+    second: {fileID: 2800000, guid: 52085528d4274704aac3f21f4d7d1af6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med_Normal
+    second: {fileID: 2800000, guid: 93a2996948b45b143a8009732e06b801, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp med_Roughness
+    second: {fileID: 2800000, guid: c64b6e77c0d7d804eba90a8395e8d795, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp plastic_Base_color
+    second: {fileID: 2800000, guid: 7dd3a3cad300aeb4997d34f620bded1d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp plastic_Metallic
+    second: {fileID: 2800000, guid: fa4a28372d7b7af419c3d1b738fce8a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp plastic_Normal
+    second: {fileID: 2800000, guid: 86c061dd52c3f324287406acfd198f13, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp plastic_Roughness
+    second: {fileID: 2800000, guid: 60ca4e9a9f92ef0448e060f191abe731, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lemp glass emishen_Emissive
+    second: {fileID: 2800000, guid: 27579fd5ba38c51498aa786400eb56ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lemp glass emishen_Normal
+    second: {fileID: 2800000, guid: 8c832b8a4da6d6c45bf9926d4f2c2072, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lemp glass emishen_Opacity
+    second: {fileID: 2800000, guid: f9d16b1baaefd23468aa247280e50703, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

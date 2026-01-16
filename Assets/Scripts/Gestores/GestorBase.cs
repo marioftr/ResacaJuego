@@ -16,6 +16,13 @@ public class DatosGuardado
     public int DG_PuntuacionDardos5;
     public int DG_PuntuacionFlautaTotalCF;
     public int[] DG_PuntuacionesFlautaSeccionesCF = new int[4];
+    public bool DG_PuertaAbiertaHabitacion;
+    public bool DG_PuertaAbiertaBaño;
+    public bool DG_LuzMesitaHabitacionOn;
+    public bool DG_LuzHabitacionOn;
+    public bool DG_LuzBañoOn;
+    public bool DG_LuzEscritorioOn;
+    public bool DG_LuzSalonOn;
 }
 
 public class GestorBase : MonoBehaviour
@@ -33,6 +40,13 @@ public class GestorBase : MonoBehaviour
     public int PuntuacionDardos5;
     public int PuntuacionFlautaTotalCF;
     public int[] PuntuacionFlautaSeccionesCF;
+    public bool PuertaAbiertaHabitacion = false;
+    public bool PuertaAbiertaBaño = false;
+    public bool LuzMesitaHabitacionOn = false;
+    public bool LuzHabitacionOn = false;
+    public bool LuzBañoOn = false;
+    public bool LuzEscritorioOn = false;
+    public bool LuzSalonOn = false;
 
     public string RutaDeGuardado;
 
@@ -61,7 +75,7 @@ public class GestorBase : MonoBehaviour
         {
             _MinijuegosDesbloqueados.Add(false);
         }
-
+        
         CargarJuego();
     }
     private void Update()
@@ -133,7 +147,7 @@ public class GestorBase : MonoBehaviour
             PlayerPrefs.GetInt("Errores_Melodia0_Seccion2"),
             PlayerPrefs.GetInt("Errores_Melodia0_Seccion3")
         };
-
+        
         datosGuardado.DG_MinijuegosDesbloqueados = _MinijuegosDesbloqueados;
         datosGuardado.DG_EnModoHistoria = EnModoHistoria;
         datosGuardado.DG_PosicionJugadorEnHabitacion = PosicionJugadorEnHabitacion;
@@ -142,6 +156,13 @@ public class GestorBase : MonoBehaviour
         datosGuardado.DG_PuntuacionDardos5 = PlayerPrefs.GetInt("Record_5");
         datosGuardado.DG_PuntuacionFlautaTotalCF = PuntuacionFlautaTotalCF;
         datosGuardado.DG_PuntuacionesFlautaSeccionesCF = PuntuacionFlautaSeccionesCF;
+        datosGuardado.DG_PuertaAbiertaHabitacion = PuertaAbiertaHabitacion;
+        datosGuardado.DG_PuertaAbiertaBaño = PuertaAbiertaBaño;
+        datosGuardado.DG_LuzMesitaHabitacionOn = LuzMesitaHabitacionOn;
+        datosGuardado.DG_LuzHabitacionOn = LuzHabitacionOn;
+        datosGuardado.DG_LuzBañoOn = LuzBañoOn;
+        datosGuardado.DG_LuzEscritorioOn = LuzEscritorioOn;
+        datosGuardado.DG_LuzSalonOn = LuzSalonOn;
 
         try
         {
@@ -181,6 +202,13 @@ public class GestorBase : MonoBehaviour
             PuntuacionDardos5 = datosGuardado.DG_PuntuacionDardos5;
             PuntuacionFlautaTotalCF = datosGuardado.DG_PuntuacionFlautaTotalCF;
             PuntuacionFlautaSeccionesCF = datosGuardado.DG_PuntuacionesFlautaSeccionesCF;
+            PuertaAbiertaHabitacion = datosGuardado.DG_PuertaAbiertaHabitacion;
+            PuertaAbiertaBaño = datosGuardado.DG_PuertaAbiertaBaño;
+            LuzMesitaHabitacionOn = datosGuardado.DG_LuzMesitaHabitacionOn;
+            LuzHabitacionOn = datosGuardado.DG_LuzHabitacionOn;
+            LuzBañoOn = datosGuardado.DG_LuzBañoOn;
+            LuzEscritorioOn = datosGuardado.DG_LuzEscritorioOn;
+            LuzSalonOn = datosGuardado.DG_LuzSalonOn;
 
             print("JSON cargado correctamente.");
         }

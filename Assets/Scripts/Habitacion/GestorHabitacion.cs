@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -10,10 +11,12 @@ public class GestorHabitacion : MonoBehaviour
     [SerializeField] private GameObject _Pointer;
     [SerializeField] private GameObject _PuertaHabCerrada;
     [SerializeField] private GameObject _PuertaHabAbierta;
+    [SerializeField] private GameObject _PuertaBañoCerrada;
+    [SerializeField] private GameObject _PuertaBañoAbierta;
+    [SerializeField] private TMP_Text _TextoFrase;
     
     private InputSystem_Actions _Controles;
     private SistemasPersonaje _Personaje;
-    private ObjetoInteractuable _Puerta;
     
     [Header("Gestión Opciones")]
     [SerializeField] private AudioMixer _AudioMixer;
@@ -53,7 +56,7 @@ public class GestorHabitacion : MonoBehaviour
         CerrarOpciones();
 
         GestorBase.Instancia.EnModoHistoria = true;
-        BloquearODesbloquearPuerta();
+        BloquearODesbloquearPuertas();
     }
 
     public void Pausa()
@@ -65,31 +68,44 @@ public class GestorHabitacion : MonoBehaviour
     {
         _PanelOpciones.SetActive(true);
         _Pointer.SetActive(false);
-        Time.timeScale = 0;
         GestorSonido.Instancia.PausarMusicaDeFondo();
         GestorJuego.LimitarRaton(false);
         _Personaje.Camara.CamaraActiva = false;
+        _TextoFrase.enabled = false;
     }
     private void CerrarOpciones()
     {
         _PanelOpciones.SetActive(false);
         _Pointer.SetActive(true);
-        Time.timeScale = 1;
         GestorSonido.Instancia.ReanudarMusicaDeFondo();
         GestorJuego.LimitarRaton(true);
         _Personaje.Camara.CamaraActiva = true;
+        _TextoFrase.enabled = true;
     }
 
-    private void BloquearODesbloquearPuerta()
+    private void BloquearODesbloquearPuertas()
     {
         if (!GestorBase.Instancia.EstaDesbloqueado(0))
         {
             _PuertaHabCerrada.SetActive(true);
             _PuertaHabAbierta.SetActive(false);
-            return;
         }
-        _PuertaHabCerrada.SetActive(false);
-        _PuertaHabAbierta.SetActive(true);
+        else
+        {
+            _PuertaHabCerrada.SetActive(false);
+            _PuertaHabAbierta.SetActive(true);
+        }
+
+        if (!GestorBase.Instancia.EstaDesbloqueado(1))
+        {
+            _PuertaBañoCerrada.SetActive(true);
+            _PuertaBañoAbierta.SetActive(false);
+        }
+        else
+        {
+            _PuertaBañoCerrada.SetActive(false);
+            _PuertaBañoAbierta.SetActive(true);
+        }
     }
 
     public void AplicarVolumenMusica()
@@ -129,11 +145,3 @@ public class GestorHabitacion : MonoBehaviour
         GestorJuego.CargarEscena(0);
     }
 }
-
-/* POR HACER
-
-- BAJAR VOLUMEN LLUVIA
-- CAJA DE MÚSICA CON AUDIO EN 3D
-- ACCESO A LOS MINIJUEGOS
-
-*/
