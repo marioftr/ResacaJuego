@@ -6,9 +6,12 @@ public class ArmarioCerrado : ObjetoInteractuable
     private string[] _Frase =
     {
         "Está cerrado.",
+        "No se abre.",
+        "No tiene pinta.",
         "Mira que es feo...",
         "Nada, no hay manera.",
-        "No tiene nada importante."
+        "No tiene nada importante.",
+        "Nada."
     };
     
     protected override void ObjetoOn()

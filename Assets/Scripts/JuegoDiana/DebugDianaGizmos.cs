@@ -5,8 +5,8 @@ using UnityEditor;  // Para Handles.Label (opcionalmente)
 
 public class DianaGizmos : MonoBehaviour
 {
-    public Transform centroDiana;       // Centro de la diana (GameObject vacío)
-    public Transform ultimoImpacto;     // Transform del último dardo clavado (posición de impacto)
+    public Transform centroDiana;       // Centro de la diana (GameObject vacï¿½o)
+    public Transform ultimoImpacto;     // Transform del ï¿½ltimo dardo clavado (posiciï¿½n de impacto)
     [SerializeField] private AnimacionDardo _AnimacionDardo;
 
     // Colores personalizables
@@ -26,31 +26,31 @@ public class DianaGizmos : MonoBehaviour
 
         if (centroDiana == null) return;
         Vector3 centro = centroDiana.position;
-        float radio = 1.0f;  // Radio de la diana en unidades del mundo (ajusta según tu escala)
+        float radio = 1.0f; 
         int totalSectores = 20;
         float anguloSector = 360f / totalSectores;
         float halfSector = anguloSector / 2f;
 
-        // Determinar ángulo de impacto actual (en grados desde arriba, horario)
+        // Determinar ï¿½ngulo de impacto actual (en grados desde arriba, horario)
         float anguloDardo = 0f;
         if (ultimoImpacto != null)
         {
             Vector3 dir = ultimoImpacto.position - centro;
             anguloDardo = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
             if (anguloDardo < 0) anguloDardo += 360f;
-            // Aplicar mismo offset de corrección que en la lógica de juego, si existe:
-            anguloDardo = (anguloDardo - 90f + 360f) % 360f;  // <- ejemplo restando 90° de offset
+            // Aplicar mismo offset de correcciï¿½n que en la lï¿½gica de juego, si existe:
+            anguloDardo = (anguloDardo - 90f + 360f) % 360f;  // <- ejemplo restando 90ï¿½ de offset
         }
 
-        // **1. Dibujar las líneas de todos los bordes de sector**
+        // **1. Dibujar las lï¿½neas de todos los bordes de sector**
         Gizmos.color = colorLineasSectores;
         for (int i = 0; i < totalSectores; i++)
         {
-            // Línea en ángulo correspondiente al borde (i * 18° - 9° para centrar 20 en 0°)
+            // Lï¿½nea en ï¿½ngulo correspondiente al borde (i * 18ï¿½ - 9ï¿½ para centrar 20 en 0ï¿½)
             float anguloBorde = (i * anguloSector) - halfSector;
-            // Aplicar el mismo offset de orientación del modelo
+            // Aplicar el mismo offset de orientaciï¿½n del modelo
             anguloBorde = (anguloBorde - 90f) * Mathf.Deg2Rad;  // convertir a radianes tras offset
-            // Calcular punto en el perímetro de la diana
+            // Calcular punto en el perï¿½metro de la diana
             float x = Mathf.Sin(anguloBorde) * radio;
             float y = Mathf.Cos(anguloBorde) * radio;
             Vector3 puntoBorde = centro + new Vector3(x, y, 0f);
@@ -60,13 +60,13 @@ public class DianaGizmos : MonoBehaviour
         // **2. Resaltar el sector del impacto con color diferente**
         if (ultimoImpacto != null)
         {
-            // Calcular índice de sector del dardo usando el anguloDardo
+            // Calcular ï¿½ndice de sector del dardo usando el anguloDardo
             int indiceSector = Mathf.FloorToInt(((anguloDardo + halfSector) % 360f) / anguloSector);
             Gizmos.color = colorSectorImpacto;
-            // Calcular ángulos de los dos bordes de ese sector (inferior y superior)
+            // Calcular ï¿½ngulos de los dos bordes de ese sector (inferior y superior)
             float anguloInicio = (indiceSector * anguloSector) - halfSector;
             float anguloFin = anguloInicio + anguloSector;
-            // Mismos cálculos de puntos de borde:
+            // Mismos cï¿½lculos de puntos de borde:
             anguloInicio = (anguloInicio - 90f) * Mathf.Deg2Rad;
             anguloFin = (anguloFin - 90f) * Mathf.Deg2Rad;
             Vector3 puntoInicio = centro + new Vector3(Mathf.Sin(anguloInicio) * radio, Mathf.Cos(anguloInicio) * radio, 0f);
@@ -75,16 +75,16 @@ public class DianaGizmos : MonoBehaviour
             Gizmos.DrawLine(centro, puntoFin);
         }
 
-        // **3. Dibujar la línea del ángulo de impacto**
+        // **3. Dibujar la lï¿½nea del ï¿½ngulo de impacto**
         if (ultimoImpacto != null)
         {
             Gizmos.color = colorAngulo;
             Gizmos.DrawLine(centro, ultimoImpacto.position);
-            // (Opcional) dibujar un pequeño punto en el impacto
+            // (Opcional) dibujar un pequeï¿½o punto en el impacto
             Gizmos.DrawSphere(ultimoImpacto.position, 0.02f);
 #if UNITY_EDITOR
             // (Opcional) Mostrar etiqueta con grados y sector
-            Handles.Label(ultimoImpacto.position + Vector3.up * 0.1f, $"{anguloDardo:F1}°");
+            Handles.Label(ultimoImpacto.position + Vector3.up * 0.1f, $"{anguloDardo:F1}ï¿½");
 #endif
         }
     }

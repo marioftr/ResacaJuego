@@ -57,5 +57,7 @@ MonoBehaviour:
   _EfectoAcordeGuitarra: {fileID: 8300000, guid: 45eedbff022683741b0b3c12d4f03739, type: 3}
   _EfectoLucesOn: {fileID: 8300000, guid: 286cc5f0158596745a7c980880e05cff, type: 3}
   _EfectoLucesOff: {fileID: 8300000, guid: 38ab8c2894981b24d9d88011211faabd, type: 3}
+  _EfectoAbrirArmarioCorredera: {fileID: 8300000, guid: 3e6f7c6de5628ac4e9abee8b28f9707d, type: 3}
+  _EfectoCerrarArmarioCorredera: {fileID: 8300000, guid: ec349d40e7047f4498f4513d9f2d6694, type: 3}
   _SalidaEfectos: {fileID: -4497614761280624457, guid: 028a0e380f06f1347ab7c3c105d6e231, type: 2}
   _VolumenEfectos: 1

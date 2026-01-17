@@ -8,16 +8,25 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class DatosGuardado
 {
+    // PERSONAJE
     public List<bool> DG_MinijuegosDesbloqueados;
     public bool DG_EnModoHistoria;
     public Vector3 DG_PosicionJugadorEnHabitacion;
     public Quaternion DG_RotacionJugadorEnHabitacion;
+    
+    // PUNTUACIONES
     public int DG_PuntuacionDardos3;
     public int DG_PuntuacionDardos5;
     public int DG_PuntuacionFlautaTotalCF;
     public int[] DG_PuntuacionesFlautaSeccionesCF = new int[4];
+    
+    // PUERTAS
     public bool DG_PuertaAbiertaHabitacion;
     public bool DG_PuertaAbiertaBaño;
+    public bool DG_ArmarioFuncionalSalon;
+    public bool DG_CabineteFuncionalSalon;
+    
+    // LUCES
     public bool DG_LuzMesitaHabitacionOn;
     public bool DG_LuzHabitacionOn;
     public bool DG_LuzBañoOn;
@@ -32,16 +41,25 @@ public class GestorBase : MonoBehaviour
     [Header("Configuración")]
     [SerializeField] private int _TotalMinijuegos = 2;
 
+    // PERSONAJE
     private List<bool> _MinijuegosDesbloqueados;
     public bool EnModoHistoria = false;
     public Vector3 PosicionJugadorEnHabitacion;
     public Quaternion RotacionJugadorEnHabitacion;
+    
+    // PUNTUACIONES
     public int PuntuacionDardos3;
     public int PuntuacionDardos5;
     public int PuntuacionFlautaTotalCF;
     public int[] PuntuacionFlautaSeccionesCF;
+    
+    // PUERTAS
     public bool PuertaAbiertaHabitacion = false;
     public bool PuertaAbiertaBaño = false;
+    public bool ArmarioFuncionalSalon = false;
+    public bool CabineteFuncionalSalon = false;
+    
+    // LUCES
     public bool LuzMesitaHabitacionOn = false;
     public bool LuzHabitacionOn = false;
     public bool LuzBañoOn = false;
@@ -134,11 +152,22 @@ public class GestorBase : MonoBehaviour
     {
         DatosGuardado datosGuardado = new DatosGuardado();
         
+        // PERSONAJE
+        datosGuardado.DG_MinijuegosDesbloqueados = _MinijuegosDesbloqueados;
+        datosGuardado.DG_EnModoHistoria = EnModoHistoria;
+        datosGuardado.DG_PosicionJugadorEnHabitacion = PosicionJugadorEnHabitacion;
+        datosGuardado.DG_RotacionJugadorEnHabitacion = RotacionJugadorEnHabitacion;
+        
+        // PUNTUACIONES
+        datosGuardado.DG_PuntuacionDardos3 = PlayerPrefs.GetInt("Record_3");
+        datosGuardado.DG_PuntuacionDardos5 = PlayerPrefs.GetInt("Record_5");
+        
         PuntuacionFlautaTotalCF =
             PlayerPrefs.GetInt("Errores_Melodia0_Seccion0") +
             PlayerPrefs.GetInt("Errores_Melodia0_Seccion1") +
             PlayerPrefs.GetInt("Errores_Melodia0_Seccion2") +
             PlayerPrefs.GetInt("Errores_Melodia0_Seccion3");
+        datosGuardado.DG_PuntuacionFlautaTotalCF = PuntuacionFlautaTotalCF;
         
         PuntuacionFlautaSeccionesCF = new int[]
         {
@@ -147,17 +176,15 @@ public class GestorBase : MonoBehaviour
             PlayerPrefs.GetInt("Errores_Melodia0_Seccion2"),
             PlayerPrefs.GetInt("Errores_Melodia0_Seccion3")
         };
-        
-        datosGuardado.DG_MinijuegosDesbloqueados = _MinijuegosDesbloqueados;
-        datosGuardado.DG_EnModoHistoria = EnModoHistoria;
-        datosGuardado.DG_PosicionJugadorEnHabitacion = PosicionJugadorEnHabitacion;
-        datosGuardado.DG_RotacionJugadorEnHabitacion = RotacionJugadorEnHabitacion;
-        datosGuardado.DG_PuntuacionDardos3 = PlayerPrefs.GetInt("Record_3");
-        datosGuardado.DG_PuntuacionDardos5 = PlayerPrefs.GetInt("Record_5");
-        datosGuardado.DG_PuntuacionFlautaTotalCF = PuntuacionFlautaTotalCF;
         datosGuardado.DG_PuntuacionesFlautaSeccionesCF = PuntuacionFlautaSeccionesCF;
+        
+        // PUERTAS
         datosGuardado.DG_PuertaAbiertaHabitacion = PuertaAbiertaHabitacion;
         datosGuardado.DG_PuertaAbiertaBaño = PuertaAbiertaBaño;
+        datosGuardado.DG_ArmarioFuncionalSalon = ArmarioFuncionalSalon;
+        datosGuardado.DG_CabineteFuncionalSalon = CabineteFuncionalSalon;
+        
+        // LUCES
         datosGuardado.DG_LuzMesitaHabitacionOn = LuzMesitaHabitacionOn;
         datosGuardado.DG_LuzHabitacionOn = LuzHabitacionOn;
         datosGuardado.DG_LuzBañoOn = LuzBañoOn;
@@ -193,17 +220,26 @@ public class GestorBase : MonoBehaviour
                 IniciarValoresPorDefecto();
                 return;
             }
-
+            
+            // PERSONAJE
             _MinijuegosDesbloqueados = datosGuardado.DG_MinijuegosDesbloqueados;
             EnModoHistoria = datosGuardado.DG_EnModoHistoria;
             PosicionJugadorEnHabitacion = datosGuardado.DG_PosicionJugadorEnHabitacion;
             RotacionJugadorEnHabitacion = datosGuardado.DG_RotacionJugadorEnHabitacion;
+            
+            // PUNTUACIONES
             PuntuacionDardos3 = datosGuardado.DG_PuntuacionDardos3;
             PuntuacionDardos5 = datosGuardado.DG_PuntuacionDardos5;
             PuntuacionFlautaTotalCF = datosGuardado.DG_PuntuacionFlautaTotalCF;
             PuntuacionFlautaSeccionesCF = datosGuardado.DG_PuntuacionesFlautaSeccionesCF;
+            
+            // PUERTAS
             PuertaAbiertaHabitacion = datosGuardado.DG_PuertaAbiertaHabitacion;
             PuertaAbiertaBaño = datosGuardado.DG_PuertaAbiertaBaño;
+            ArmarioFuncionalSalon = datosGuardado.DG_ArmarioFuncionalSalon;
+            CabineteFuncionalSalon = datosGuardado.DG_CabineteFuncionalSalon;
+            
+            // LUCES
             LuzMesitaHabitacionOn = datosGuardado.DG_LuzMesitaHabitacionOn;
             LuzHabitacionOn = datosGuardado.DG_LuzHabitacionOn;
             LuzBañoOn = datosGuardado.DG_LuzBañoOn;

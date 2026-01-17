@@ -24,7 +24,9 @@ public class GestorEfectosSonido : MonoBehaviour
     [SerializeField] private AudioClip _EfectoAcordeGuitarra;
     [SerializeField] private AudioClip _EfectoLucesOn;
     [SerializeField] private AudioClip _EfectoLucesOff;
-    
+    [SerializeField] private AudioClip _EfectoAbrirArmarioCorredera;
+    [SerializeField] private AudioClip _EfectoCerrarArmarioCorredera;
+
     [SerializeField] private AudioMixerGroup _SalidaEfectos;
     
     [SerializeField] [Range(0f, 1f)] private float _VolumenEfectos;
@@ -54,7 +56,9 @@ public class GestorEfectosSonido : MonoBehaviour
             {"EfectoArmarioBloqueado", _EfectoArmarioBloqueado},
             {"EfectoAcordeGuitarra", _EfectoAcordeGuitarra},
             {"EfectoLucesOn", _EfectoLucesOn},
-            {"EfectoLucesOff", _EfectoLucesOff}
+            {"EfectoLucesOff", _EfectoLucesOff},
+            {"EfectoAbrirArmarioCorredera",  _EfectoAbrirArmarioCorredera},
+            {"EfectoCerrarArmarioCorredera", _EfectoCerrarArmarioCorredera},
         };
         
         _AudioClips = new List<AudioClip>(_DiccionarioEfectos.Values);
