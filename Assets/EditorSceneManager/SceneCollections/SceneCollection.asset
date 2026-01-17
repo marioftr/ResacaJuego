@@ -17,8 +17,8 @@ MonoBehaviour:
     scenePath: Assets/Scenes/0_Menu.unity
     savedColor: {r: 0, g: 0, b: 0, a: 0}
     isHeader: 0
-  - sceneName: 1_Juego
-    scenePath: Assets/Scenes/1_Juego.unity
+  - sceneName: 1_HabitacionCopia
+    scenePath: Assets/Scenes/1_HabitacionCopia.unity
     savedColor: {r: 0, g: 0, b: 0, a: 0}
     isHeader: 0
   - sceneName: 2_Habitacion

@@ -569,6 +569,9 @@ MonoBehaviour:
   DireccionXZ: {x: 0, y: 0, z: 0}
   _AlturaDePie: 2
   _AlturaAgachado: 1.5
+  _SalidaEfectos: {fileID: 0}
+  _Audio: {fileID: 0}
+  _EfectoCorrer: {fileID: 0}
 --- !u!1 &1492989595
 GameObject:
   m_ObjectHideFlags: 0

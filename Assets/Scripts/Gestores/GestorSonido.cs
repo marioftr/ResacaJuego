@@ -112,7 +112,7 @@ public class GestorSonido : MonoBehaviour
 
         yield return StartCoroutine(FadeIn());
     }
-    private IEnumerator FadeOut()
+    public IEnumerator FadeOut()
     {
         float tiempoInicio = Time.time;
         float volumenInicio = MusicaDeFondo.volume;

@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/0_Menu.unity
     guid: 5987cb51e084019478f92f3bba7fefe9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/1_Juego.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/1_HabitacionCopia.unity
+    guid: 1227c5a6d98210641ba24c32fa9cc3d3
   - enabled: 1
     path: Assets/Scenes/2_Habitacion.unity
     guid: 1cfeedc35cf3ecb499c5fac97cb64a63

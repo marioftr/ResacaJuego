@@ -12,6 +12,7 @@ public class GestorJuego : MonoBehaviour
     public static GameObject PanelRecords;
     public static Button BotonDiana;
     public static Button BotonFlauta;
+    public static bool VerCinematica;
 
     [Header("Gestión Paneles")]
     [SerializeField] private GameObject _PanelPrincipal;
@@ -22,6 +23,8 @@ public class GestorJuego : MonoBehaviour
 
     [Header("Gestión Opciones")]
     [SerializeField] private AudioMixer _AudioMixer;
+
+    [SerializeField] private Toggle _ToggleVerCinematica;
     [SerializeField] private Toggle _TogglePantallaCompleta;
     [SerializeField] private Slider _SliderVolumenMusica;
     [SerializeField] private Slider _SliderVolumenEfectos;
@@ -29,6 +32,7 @@ public class GestorJuego : MonoBehaviour
     private const string _ParametroVolumenMusica = "Musica";
     private const string _ParametroVolumenEfectos = "Efectos";
     private const string _ClavePantallaCompleta = "PantallaCompleta";
+    private const string _ClaveVerCinematica = "VerCinematica";
     
     [Header("Gestión Minijuegos")]
     [SerializeField] private Button _BotonDiana;
@@ -115,11 +119,13 @@ public class GestorJuego : MonoBehaviour
         _SliderVolumenEfectos.value = PlayerPrefs.GetFloat(_ParametroVolumenEfectos, 0.75f);
         // isOn = Screen.fullScreen sirve para asignar el valor "true" al toggle si lee que el juego está en pantalla completa, y "false" si está en ventana
         _TogglePantallaCompleta.isOn = PlayerPrefs.GetInt(_ClavePantallaCompleta, 0) == 1;
+        _ToggleVerCinematica.isOn = PlayerPrefs.GetInt(_ClaveVerCinematica, 1) == 1;
 
         // Aplica los valores
         AplicarVolumenMusica();
         AplicarVolumenEfectos();
         AplicarPantallaCompleta();
+        AplicarVerCinematica();
     }
     public void AplicarVolumenMusica()
     {
@@ -169,7 +175,22 @@ public class GestorJuego : MonoBehaviour
         
         Debug.Log("Pantalla completa: " + pantallaCompleta); // Prueba para ver si funciona la pantalla completa en el editor
     }
-
+    public void AplicarVerCinematica()
+    {
+        VerCinematica = _ToggleVerCinematica.isOn;
+        if (GestorBase.Instancia.EstaDesbloqueado(0))
+        {
+            _ToggleVerCinematica.gameObject.SetActive(true);
+        }
+        else
+        {
+            _ToggleVerCinematica.gameObject.SetActive(false);
+        }
+        
+        PlayerPrefs.SetInt(_ClaveVerCinematica, VerCinematica ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+    
     public static void ActivarDesactivarObjeto(GameObject objeto, bool opcion)
     {
         if (objeto.TryGetComponent(out Collider colision))
@@ -216,5 +237,20 @@ public class GestorJuego : MonoBehaviour
     {
         SeleccionarTiradasDardos(3);
         CargarMinijuego(3);
+    }
+    public static void IniciarPartida()
+    {
+        if (!GestorBase.Instancia.EstaDesbloqueado(0))
+        {
+            CargarEscena(1);
+        }
+        else if (VerCinematica)
+        {
+            CargarEscena(1);
+        }
+        else
+        {
+            CargarEscena(2);
+        }
     }
 }
