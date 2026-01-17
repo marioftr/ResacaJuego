@@ -58,7 +58,7 @@ public class GestorEfectosSonido : MonoBehaviour
             {"EfectoLucesOn", _EfectoLucesOn},
             {"EfectoLucesOff", _EfectoLucesOff},
             {"EfectoAbrirArmarioCorredera",  _EfectoAbrirArmarioCorredera},
-            {"EfectoCerrarArmarioCorredera", _EfectoCerrarArmarioCorredera},
+            {"EfectoCerrarArmarioCorredera", _EfectoCerrarArmarioCorredera}
         };
         
         _AudioClips = new List<AudioClip>(_DiccionarioEfectos.Values);

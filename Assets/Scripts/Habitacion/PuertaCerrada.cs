@@ -6,6 +6,8 @@ public class PuertaCerrada : ObjetoInteractuable
     private string[] _Frase =
     {
         "Parece que está cerrada.",
+        "Parece que está cerrada.",
+        "Parece que está cerrada.",
         "No consigo abrirla.",
         "¿Habrá alguna forma de abrirla?",
         "¡Ábrete, sésamo!"

@@ -6,6 +6,8 @@ public class Guitarra : MinijuegoInteractuable
     private string[] _Frase =
     {
         "Es una guitarra.",
+        "Es una guitarra.",
+        "Es una guitarra.",
         "No sé tocar la guitarra.",
         "Aprendí a tocar la flauta dulce en el cole.",
         "¿Por qué hay una guitarra en el salón?",

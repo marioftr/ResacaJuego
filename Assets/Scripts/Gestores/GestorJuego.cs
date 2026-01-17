@@ -139,6 +139,7 @@ public class GestorJuego : MonoBehaviour
 
         _AudioMixer.SetFloat(_ParametroVolumenMusica, db); // Ahora sí, asigna al AudioMixer el volumen
         PlayerPrefs.SetFloat(_ParametroVolumenMusica, valor); // Guarda el valor en los archivos del jugador
+        PlayerPrefs.Save();
     }
 
     public void AplicarVolumenEfectos()
@@ -147,6 +148,7 @@ public class GestorJuego : MonoBehaviour
         float db = valor > 0.0001f ? Mathf.Log10(valor) * 20 : -80f;
         _AudioMixer.SetFloat(_ParametroVolumenEfectos, db);
         PlayerPrefs.SetFloat(_ParametroVolumenEfectos, valor);
+        PlayerPrefs.Save();
     }
     public void AplicarPantallaCompleta()
     {

@@ -6,6 +6,8 @@ public class Dardos : MinijuegoInteractuable
     private string[] _Frase =
     {
         "Es una diana.",
+        "Es una diana.",
+        "Es una diana.",
         "Robé esta diana el mismo día que el cono.",
         "No soy especialmente bueno a los dardos.",
         "Ahora recuerdo... Ayer jugamos a los dardos.",

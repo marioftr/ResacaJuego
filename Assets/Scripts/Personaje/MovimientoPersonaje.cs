@@ -1,11 +1,12 @@
 using System.IO;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MovimientoPersonaje : MonoBehaviour
 {
     [Header("Velocidad")]
-    [SerializeField] private float _VelocidadBase = 5;
-    [SerializeField] private float _ModificadorAlCorrer = 2;
+    [SerializeField] private float _VelocidadBase = 1.5f;
+    [SerializeField] private float _ModificadorAlCorrer = 1.5f;
     private float _VelocidadFinal;
 
     [Header("Información")]
@@ -21,6 +22,11 @@ public class MovimientoPersonaje : MonoBehaviour
     private CapsuleCollider _Collider;
     private bool _Corriendo;
     private bool _Agachado;
+    
+    [Header("Audios")]
+    [SerializeField] private AudioMixerGroup _SalidaEfectos;
+    [SerializeField] private AudioSource _Audio;
+    [SerializeField] private AudioClip _EfectoCorrer;
 
     private void Awake()
     {
@@ -28,6 +34,7 @@ public class MovimientoPersonaje : MonoBehaviour
         _Rigidbody = GetComponent<Rigidbody>();
         _Collider = GetComponent<CapsuleCollider>();
         _Transform = transform;
+        ConfigurarAudios();
     }
     private void Start()
     {
@@ -44,12 +51,13 @@ public class MovimientoPersonaje : MonoBehaviour
     private void Update()
     {
         CalcularMovimiento();
+        CalcularSonidoPasos();
     }
     private void CalcularMovimiento()
     {
         if (_Rigidbody == null)
         {
-            Debug.LogError("Falta a�adir un Rigidbody");
+            Debug.LogError("Falta añadir un Rigidbody");
             return;
         }
         _Direccion.x = DireccionXZ.x;
@@ -64,7 +72,7 @@ public class MovimientoPersonaje : MonoBehaviour
         _Corriendo= corriendo;
         if (_Corriendo)
         {
-            _VelocidadFinal = _VelocidadBase + _ModificadorAlCorrer;
+            _VelocidadFinal = _VelocidadBase * _ModificadorAlCorrer;
         }
         else
         {
@@ -85,6 +93,34 @@ public class MovimientoPersonaje : MonoBehaviour
             _VelocidadFinal = _VelocidadBase;
             _Collider.height = _AlturaDePie;
             _Collider.center = Vector3.zero;
+        }
+    }
+
+    private void ConfigurarAudios()
+    {
+        _Audio.playOnAwake = false;
+        _Audio.loop = true;
+        _Audio.outputAudioMixerGroup = _SalidaEfectos;
+        _Audio.volume = 0.3f;
+        _Audio.clip = _EfectoCorrer;
+    }
+    private void CalcularSonidoPasos()
+    {
+        float velocidad = _Rigidbody.linearVelocity.magnitude;
+        if (velocidad >= _VelocidadBase && !_Corriendo)
+        {
+            _Audio.pitch = 0.8f;
+            if(!_Audio.isPlaying) _Audio.Play();
+        }
+        else if (velocidad >= _VelocidadBase && _Corriendo)
+        {
+            _Audio.pitch = 1f;
+            if(!_Audio.isPlaying) _Audio.Play();
+        }
+        else
+        {
+            _Audio.pitch = 1f;
+            _Audio.Stop();
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class GestorHabitacion : MonoBehaviour
@@ -23,9 +24,12 @@ public class GestorHabitacion : MonoBehaviour
     [SerializeField] private Toggle _TogglePantallaCompleta;
     [SerializeField] private Slider _SliderVolumenMusica;
     [SerializeField] private Slider _SliderVolumenEfectos;
+    [SerializeField] private Slider _SliderPostprocesado;
+    [SerializeField] private Volume _VolumenPostprocesado;
     private const string _ParametroVolumenMusica = "Musica";
     private const string _ParametroVolumenEfectos = "Efectos";
     private const string _ClavePantallaCompleta = "PantallaCompleta";
+    private const string _ClavePostprocesado = "Postprocesado";
 
     private void Awake()
     {
@@ -39,10 +43,12 @@ public class GestorHabitacion : MonoBehaviour
         _SliderVolumenMusica.value = PlayerPrefs.GetFloat(_ParametroVolumenMusica, 0.75f);
         _SliderVolumenEfectos.value = PlayerPrefs.GetFloat(_ParametroVolumenEfectos, 0.75f);
         _TogglePantallaCompleta.isOn = PlayerPrefs.GetInt(_ClavePantallaCompleta, 0) == 1;
+        _SliderPostprocesado.value = PlayerPrefs.GetFloat(_ClavePostprocesado, 0.75f);
         
         AplicarVolumenMusica();
         AplicarVolumenEfectos();
         AplicarPantallaCompleta();
+        AplicarPostprocesado();
     }
     private void OnDisable()
     {
@@ -68,7 +74,7 @@ public class GestorHabitacion : MonoBehaviour
     {
         _PanelOpciones.SetActive(true);
         _Pointer.SetActive(false);
-        GestorSonido.Instancia.PausarMusicaDeFondo();
+        GestorSonido.Instancia.ReproducirMusicaDeFondo("MenuPausa");
         GestorJuego.LimitarRaton(false);
         _Personaje.Camara.CamaraActiva = false;
         _TextoFrase.enabled = false;
@@ -77,7 +83,7 @@ public class GestorHabitacion : MonoBehaviour
     {
         _PanelOpciones.SetActive(false);
         _Pointer.SetActive(true);
-        GestorSonido.Instancia.ReanudarMusicaDeFondo();
+        GestorSonido.Instancia.ReproducirMusicaDeFondo("Lluvia");
         GestorJuego.LimitarRaton(true);
         _Personaje.Camara.CamaraActiva = true;
         _TextoFrase.enabled = true;
@@ -114,6 +120,7 @@ public class GestorHabitacion : MonoBehaviour
         float db = valor > 0.0001f ? Mathf.Log10(valor) * 20 : -80f;
         _AudioMixer.SetFloat(_ParametroVolumenMusica, db);
         PlayerPrefs.SetFloat(_ParametroVolumenMusica, valor);
+        PlayerPrefs.Save();
     }
     public void AplicarVolumenEfectos()
     {
@@ -121,6 +128,7 @@ public class GestorHabitacion : MonoBehaviour
         float db = valor > 0.0001f ? Mathf.Log10(valor) * 20 : -80f;
         _AudioMixer.SetFloat(_ParametroVolumenEfectos, db);
         PlayerPrefs.SetFloat(_ParametroVolumenEfectos, valor);
+        PlayerPrefs.Save();
     }
     public void AplicarPantallaCompleta()
     {
@@ -137,6 +145,19 @@ public class GestorHabitacion : MonoBehaviour
         PlayerPrefs.SetInt(_ClavePantallaCompleta, pantallaCompleta ? 1 : 0);
         PlayerPrefs.Save();
         Debug.Log("Pantalla completa: " + pantallaCompleta);
+    }
+    public void AplicarPostprocesado()
+    {
+        if (_VolumenPostprocesado == null)
+        {
+            Debug.LogError("VolumenPostprocesado no asignado en Inspector!");
+            return;
+        }
+        float valor = _SliderPostprocesado.value;
+        PlayerPrefs.SetFloat(_ClavePostprocesado, valor);
+        PlayerPrefs.Save();
+        _VolumenPostprocesado.weight = valor;
+        Debug.Log("Postprocesado aplicado: " + valor);
     }
     public void VolverAlMenu()
     {

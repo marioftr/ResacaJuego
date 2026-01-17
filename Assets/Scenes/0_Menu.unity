@@ -2356,6 +2356,8 @@ MonoBehaviour:
     ClipDeAudio: {fileID: 8300000, guid: 3a897bcf8c29e9c4eabb49fc73908a8f, type: 3}
   - NombreClave: Lluvia
     ClipDeAudio: {fileID: 8300000, guid: b184a77b58b29ac41a48dd08023c414f, type: 3}
+  - NombreClave: MenuPausa
+    ClipDeAudio: {fileID: 8300000, guid: ef459464ce39f294caeb1e417c4584c4, type: 3}
 --- !u!4 &256962172
 Transform:
   m_ObjectHideFlags: 0
@@ -2573,9 +2575,13 @@ MonoBehaviour:
   PuntuacionFlautaSeccionesCF: 
   PuertaAbiertaHabitacion: 0
   "PuertaAbiertaBa\xF1o": 0
+  ArmarioFuncionalSalon: 0
+  CabineteFuncionalSalon: 0
   LuzMesitaHabitacionOn: 0
   LuzHabitacionOn: 0
   "LuzBa\xF1oOn": 0
+  LuzEscritorioOn: 0
+  LuzSalonOn: 0
   RutaDeGuardado: 
 --- !u!4 &291592606
 Transform:
@@ -13397,6 +13403,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4961069040956412278, guid: 8a1404bb744eb9040870e24811e4fd5e, type: 3}
+      propertyPath: _EfectoAndar
+      value: 
+      objectReference: {fileID: 8300000, guid: b7aaaebbe2b6ec74eb19d4b72e7dc9c8, type: 3}
+    - target: {fileID: 4961069040956412278, guid: 8a1404bb744eb9040870e24811e4fd5e, type: 3}
+      propertyPath: _EfectoCorrer
+      value: 
+      objectReference: {fileID: 8300000, guid: 76fbe464be99e2a4aa55260ad62455d0, type: 3}
     - target: {fileID: 4961069040956412278, guid: 8a1404bb744eb9040870e24811e4fd5e, type: 3}
       propertyPath: _EfectoPuertaAbierta
       value: 

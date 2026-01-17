@@ -38,12 +38,19 @@ public abstract class ObjetoInteractuable : MonoBehaviour, IInteractuable, IInfo
     public void AlVerInfo()
     {
         _InfoObjeto.SetActive(true);
-        gameObject.layer = 3;
+        CambiarCapa(gameObject, 3);
     }
-
     public void AlOcultarInfo()
     {
         _InfoObjeto.SetActive(false);
-        gameObject.layer = 0;
+        CambiarCapa(gameObject, 0);
+    }
+    private void CambiarCapa(GameObject objeto, int capa)
+    {
+        objeto.layer = capa;
+        foreach (Transform hijo in objeto.transform)
+        {
+            CambiarCapa(hijo.gameObject, capa);
+        }
     }
 }

@@ -27,9 +27,9 @@ MonoBehaviour:
   enableOcclusion: 0
   occludedColor: {r: 1, g: 0, b: 0, a: 1}
   blendMode: 0
-  extrusionMethod: 0
+  extrusionMethod: 4
   scaling: 0
-  width: 2
+  width: 10
   minWidth: 1
   scaleWithResolution: 1
   referenceResolution: 2

@@ -47,13 +47,21 @@ public abstract class MinijuegoInteractuable : MonoBehaviour, IInteractuable, II
     {
         _InfoObjeto.SetActive(true);
         _InfoJugar.SetActive(true);
-        gameObject.layer = 3;
+        CambiarCapa(gameObject, 3);
     }
     public void AlOcultarInfo()
     {
         _InfoObjeto.SetActive(false);
         _InfoJugar.SetActive(false);
-        gameObject.layer = 0;
+        CambiarCapa(gameObject, 0);
+    }
+    private void CambiarCapa(GameObject objeto, int capa)
+    {
+        objeto.layer = capa;
+        foreach (Transform hijo in objeto.transform)
+        {
+            CambiarCapa(hijo.gameObject, capa);
+        }
     }
     public void AlJugar()
     {
