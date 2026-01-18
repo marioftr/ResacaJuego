@@ -2579,7 +2579,10 @@ MonoBehaviour:
   "PuertaAbiertaBa\xF1o": 0
   ArmarioFuncionalSalon: 0
   CabineteFuncionalSalon: 0
-  DuchaFuncional: 0
+  DuchaFuncionalIzq: 0
+  DuchaFuncionalDer: 0
+  "ArmarioFuncionalBa\xF1oIzq": 0
+  "ArmarioFuncionalBa\xF1oDer": 0
   LuzMesitaHabitacionOn: 0
   LuzHabitacionOn: 0
   "LuzBa\xF1oOn": 0
@@ -4555,8 +4558,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 85
-  m_fontSizeBase: 85
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4987,7 +4990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &817012880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8966,7 +8969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15}
+  m_AnchoredPosition: {x: 0, y: 10}
   m_SizeDelta: {x: 1050, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372899729
@@ -8997,10 +9000,10 @@ MonoBehaviour:
     PS1 gratu\xEDtos, claves para la est\xE9tica low-poly lograda en este proyecto.\n\n-
     Setuniman, por su colecci\xF3n de m\xFAsica y efectos de sonido, predominantes
     en la banda sonora.\n\n- Juanxon (Editor Scene Manager), Alexander Ameye (Free
-    Outline), Mattias Edlund (Mesh Simplifier), Critsoft (Mesh Combiner) y LW Games
-    (Anchorpoint), por sus correspondientes Assets de Unity, que aceleraron la creaci\xF3n
-    del juego.\n\n- Kirby y CEI., por otorgarme la capacidad y los medios para llevar
-    a cabo esta producci\xF3n."
+    Outline), Mattias Edlund (Mesh Simplifier), Critsoft (Mesh Combiner), DemiGiant
+    (DOTween) y LW Games (Anchorpoint), por sus correspondientes Assets de Unity,
+    que aceleraron la creaci\xF3n del juego.\n\n- Kirby y CEI., por otorgarme la
+    capacidad y los medios para llevar a cabo esta producci\xF3n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 1995a1d120698d147ab9abcb97c76a7c, type: 2}
