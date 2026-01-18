@@ -20,11 +20,24 @@ public class GestorAnimacion : MonoBehaviour
     
     private float _DuracionPlanos = 5.5f;
     private float _DuracionFade = 4f;
+    
+    private InputSystem_Actions _Controles;
 
     private void Awake()
     {
         _VolumenPostprocesado.profile.TryGet<ColorAdjustments>(out _ColorEscena);
         GestorJuego.LimitarRaton(true);
+        _Controles = new();
+    }
+
+    private void OnEnable()
+    {
+        _Controles.Enable();
+    }
+
+    private void OnDisable()
+    {
+        _Controles.Disable();
     }
     private void Start()
     {
@@ -33,7 +46,14 @@ public class GestorAnimacion : MonoBehaviour
         StartCoroutine(PostprocesadoColores());
         StartCoroutine(Animacion());
     }
-    
+    private void Update()
+    {
+        if (_Controles.UI.Pause.WasPressedThisFrame())
+        {
+            StopAllCoroutines();
+            GestorJuego.CargarEscena(2);
+        }
+    }
     private IEnumerator PostprocesadoColores()
     {
         _ColorEscena.colorFilter.value = Color.HSVToRGB(0f, 0.5f, 1f);
@@ -88,6 +108,8 @@ public class GestorAnimacion : MonoBehaviour
         ResetearCamaras();
         _CamaraAnimacion4.Priority = 10;
         yield return StartCoroutine(Plano4());
+        
+        StopAllCoroutines();
         GestorJuego.CargarEscena(2);
     }
     private IEnumerator Plano1()

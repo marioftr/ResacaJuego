@@ -726,7 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.2901961, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4990,7 +4990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &817012880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5726,7 +5726,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tiro al dardo
+  m_text: Tiro al blanco
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3088817c2de29eb4aae19dd12249c846, type: 2}
   m_sharedMaterial: {fileID: 4183189009244075482, guid: 3088817c2de29eb4aae19dd12249c846, type: 2}
@@ -8995,7 +8995,7 @@ MonoBehaviour:
   m_text: "Doy abiertamente las gracias a OpenGameArt, Sketchfab, itch.io, Unity
     Asset Store, Freesound, Pixabay, DaFont, StackOverflow y a sus usuarios por facilitar
     la obtenci\xF3n de recursos de utilidad y gratu\xEDtos que hicieron posible la
-    elaboraci\xF3n de este proyecto.\n\nAs\xED mismo, y m\xE1s concretamente, agradezco
+    elaboraci\xF3n de este proyecto.\n\nAsimismo, y m\xE1s concretamente, agradezco
     a:\n\n- Emerald Eel (y a todos los integrantes), por su colecci\xF3n de modelos
     PS1 gratu\xEDtos, claves para la est\xE9tica low-poly lograda en este proyecto.\n\n-
     Setuniman, por su colecci\xF3n de m\xFAsica y efectos de sonido, predominantes

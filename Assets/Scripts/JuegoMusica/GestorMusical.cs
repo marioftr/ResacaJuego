@@ -177,7 +177,7 @@ public class GestorMusical : MonoBehaviour
     
     private void GenerarMelodias()
     {
-        // Notas musicales
+        // Notas musicales utilizadas
         NotaMusical sol3 = NotasMusicales[0];
         NotaMusical la3 = NotasMusicales[1];
         NotaMusical si3 = NotasMusicales[2];
