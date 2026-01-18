@@ -12,7 +12,10 @@ public class Guitarra : MinijuegoInteractuable
         "Aprendí a tocar la flauta dulce en el cole.",
         "¿Por qué hay una guitarra en el salón?",
         "La música hace que me duela la cabeza.",
-        "¿Y si me toco algo?"
+        "¿Y si me toco algo?",
+        "Solo me sé 'Cumpleaños feliz' con la flauta.",
+        "Solo me sé 'Cumpleaños feliz' con la flauta.",
+        "Solo me sé 'Cumpleaños feliz' con la flauta."
     };
     
     protected override void ObjetoOn()

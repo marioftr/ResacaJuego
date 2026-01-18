@@ -21,9 +21,8 @@ public class NotaMusical : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private bool _NotaPulsada = false;
 
     private Coroutine _CorrutinaRelleno;
-
     public Coroutine CorrutinaNotaActual;
-
+    
     public delegate void NotaJugadorCompletada(NotaMusical nota, float duracion);
     public event NotaJugadorCompletada EventoNotaJugadorCompletada;
 
@@ -178,6 +177,8 @@ public class NotaMusical : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
         float duracionEsperada = _GestorMusical.ObtenerDuracionNotaEsperada();
         IniciarRelleno(duracionEsperada);
+        
+        Flauta.Instancia.IniciarBucle();
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -194,5 +195,7 @@ public class NotaMusical : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             EventoNotaJugadorCompletada(this, duracionPulsacion);
         }*/
+        
+        Flauta.Instancia.DetenerMovimiento();
     }
 }

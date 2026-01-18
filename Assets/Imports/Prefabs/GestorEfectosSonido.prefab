@@ -59,5 +59,10 @@ MonoBehaviour:
   _EfectoLucesOff: {fileID: 8300000, guid: 38ab8c2894981b24d9d88011211faabd, type: 3}
   _EfectoAbrirArmarioCorredera: {fileID: 8300000, guid: 3e6f7c6de5628ac4e9abee8b28f9707d, type: 3}
   _EfectoCerrarArmarioCorredera: {fileID: 8300000, guid: ec349d40e7047f4498f4513d9f2d6694, type: 3}
+  _EfectoPuertaArmarioAbierta: {fileID: 8300000, guid: 3876b1c321450404e83a1639943cf3b7, type: 3}
+  _EfectoPuertaArmarioCerrada: {fileID: 8300000, guid: addbc5ec40e1f494e928694cd3aa5865, type: 3}
+  _EfectoPuertaDuchaAbierta: {fileID: 8300000, guid: 9c21ac4db69cfb6499d007c85ac1fbb7, type: 3}
+  _EfectoPuertaDuchaCerrada: {fileID: 8300000, guid: 1fee47dba9dee524eaa150cc2befc0c5, type: 3}
+  _EfectoPostIt: {fileID: 8300000, guid: 4dd294a273f6e63448f5d63bccf35fc0, type: 3}
   _SalidaEfectos: {fileID: -4497614761280624457, guid: 028a0e380f06f1347ab7c3c105d6e231, type: 2}
   _VolumenEfectos: 1

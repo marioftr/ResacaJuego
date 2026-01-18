@@ -26,7 +26,12 @@ public class GestorEfectosSonido : MonoBehaviour
     [SerializeField] private AudioClip _EfectoLucesOff;
     [SerializeField] private AudioClip _EfectoAbrirArmarioCorredera;
     [SerializeField] private AudioClip _EfectoCerrarArmarioCorredera;
-
+    [SerializeField] private AudioClip _EfectoPuertaArmarioAbierta;
+    [SerializeField] private AudioClip _EfectoPuertaArmarioCerrada;
+    [SerializeField] private AudioClip _EfectoPuertaDuchaAbierta;
+    [SerializeField] private AudioClip _EfectoPuertaDuchaCerrada;
+    [SerializeField] private AudioClip _EfectoPostIt;
+    
     [SerializeField] private AudioMixerGroup _SalidaEfectos;
     
     [SerializeField] [Range(0f, 1f)] private float _VolumenEfectos;
@@ -58,7 +63,12 @@ public class GestorEfectosSonido : MonoBehaviour
             {"EfectoLucesOn", _EfectoLucesOn},
             {"EfectoLucesOff", _EfectoLucesOff},
             {"EfectoAbrirArmarioCorredera",  _EfectoAbrirArmarioCorredera},
-            {"EfectoCerrarArmarioCorredera", _EfectoCerrarArmarioCorredera}
+            {"EfectoCerrarArmarioCorredera", _EfectoCerrarArmarioCorredera},
+            {"EfectoPuertaArmarioAbierta", _EfectoPuertaArmarioAbierta},
+            {"EfectoPuertaArmarioCerrada", _EfectoPuertaArmarioCerrada},
+            {"EfectoPuertaDuchaAbierta", _EfectoPuertaDuchaAbierta},
+            {"EfectoPuertaDuchaCerrada", _EfectoPuertaDuchaCerrada},
+            {"EfectoPostIt", _EfectoPostIt}
         };
         
         _AudioClips = new List<AudioClip>(_DiccionarioEfectos.Values);

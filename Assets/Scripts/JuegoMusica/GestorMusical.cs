@@ -344,6 +344,8 @@ public class GestorMusical : MonoBehaviour
             StartCoroutine(PartituraCumpleañosFeliz.Instancia.MoverPartitura(indiceSeccion));
         }
         
+        Flauta.Instancia.IniciarBucle();
+
         foreach (var elemento in SeccionesMelodia[indiceSeccion])
         {
             NotaMusical nota = elemento.nota;
@@ -361,6 +363,8 @@ public class GestorMusical : MonoBehaviour
         _SecuenciaJugador.Clear();
         CambiarEstado(EstadoJuegoMusical.Jugador);
         
+        Flauta.Instancia.DetenerMovimiento();
+
         if (_CorrutinaActualEsperaMaxima != null)
         {
             StopCoroutine(_CorrutinaActualEsperaMaxima);

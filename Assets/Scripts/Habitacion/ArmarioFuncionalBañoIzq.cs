@@ -3,16 +3,20 @@ using UnityEngine;
 using System.Collections;
 using System.Runtime.ConstrainedExecution;
 
-public class DuchaFuncional : ObjetoInteractuable
+public class ArmarioFuncionalBañoIzq : ObjetoInteractuable
 {
     [SerializeField] private Transform _Transform;
-    [SerializeField] private Vector3 _PosicionPuertaAbierta;
-    [SerializeField] private Vector3 _PosicionPuertaCerrada;
+    [SerializeField] private Vector3 _RotacionPuertaAbierta;
+    [SerializeField] private Vector3 _RotacionPuertaCerrada;
     private string[] _Frase = {""};
 
+    private void Awake()
+    {
+        _Transform = transform;
+    }
     private void Start()
     {
-        if (GestorBase.Instancia.DuchaFuncional)
+        if (GestorBase.Instancia.ArmarioFuncionalBañoIzq)
         {
             AbrirPuerta();
         }
@@ -44,16 +48,14 @@ public class DuchaFuncional : ObjetoInteractuable
     
     private void AbrirPuerta()
     {
-        _Transform.position = _PosicionPuertaAbierta;
-        _Transform.position = _PosicionPuertaAbierta;
+        _Transform.localEulerAngles = _RotacionPuertaAbierta;
         _ObjetoOn = true;
-        GestorBase.Instancia.DuchaFuncional = true;
+        GestorBase.Instancia.ArmarioFuncionalBañoIzq = true;
     }
     private void CerrarPuerta()
     {
-        _Transform.position = _PosicionPuertaCerrada;
-        _Transform.position = _PosicionPuertaCerrada;
+        _Transform.localEulerAngles = _RotacionPuertaCerrada;
         _ObjetoOn = false;
-        GestorBase.Instancia.DuchaFuncional = false;
+        GestorBase.Instancia.ArmarioFuncionalBañoIzq = false;
     }
 }

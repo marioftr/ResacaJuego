@@ -25,7 +25,10 @@ public class DatosGuardado
     public bool DG_PuertaAbiertaBaño;
     public bool DG_ArmarioFuncionalSalon;
     public bool DG_CabineteFuncionalSalon;
-    public bool DG_DuchaFuncional;
+    public bool DG_DuchaFuncionalIzq;
+    public bool DG_DuchaFuncionalDer;
+    public bool DG_ArmarioFuncionalBañoIzq;
+    public bool DG_ArmarioFuncionalBañoDer;
     
     // LUCES
     public bool DG_LuzMesitaHabitacionOn;
@@ -59,7 +62,10 @@ public class GestorBase : MonoBehaviour
     public bool PuertaAbiertaBaño = false;
     public bool ArmarioFuncionalSalon = false;
     public bool CabineteFuncionalSalon = false;
-    public bool DuchaFuncional = false;
+    public bool DuchaFuncionalIzq = false;
+    public bool DuchaFuncionalDer = false;
+    public bool ArmarioFuncionalBañoIzq = false;
+    public bool ArmarioFuncionalBañoDer = false;
     
     // LUCES
     public bool LuzMesitaHabitacionOn = false;
@@ -185,7 +191,10 @@ public class GestorBase : MonoBehaviour
         datosGuardado.DG_PuertaAbiertaBaño = PuertaAbiertaBaño;
         datosGuardado.DG_ArmarioFuncionalSalon = ArmarioFuncionalSalon;
         datosGuardado.DG_CabineteFuncionalSalon = CabineteFuncionalSalon;
-        datosGuardado.DG_DuchaFuncional = DuchaFuncional;
+        datosGuardado.DG_DuchaFuncionalIzq = DuchaFuncionalIzq;
+        datosGuardado.DG_DuchaFuncionalDer = DuchaFuncionalDer;
+        datosGuardado.DG_ArmarioFuncionalBañoIzq = ArmarioFuncionalBañoIzq;
+        datosGuardado.DG_ArmarioFuncionalBañoDer = ArmarioFuncionalBañoDer;
         
         // LUCES
         datosGuardado.DG_LuzMesitaHabitacionOn = LuzMesitaHabitacionOn;
@@ -241,7 +250,10 @@ public class GestorBase : MonoBehaviour
             PuertaAbiertaBaño = datosGuardado.DG_PuertaAbiertaBaño;
             ArmarioFuncionalSalon = datosGuardado.DG_ArmarioFuncionalSalon;
             CabineteFuncionalSalon = datosGuardado.DG_CabineteFuncionalSalon;
-            DuchaFuncional = datosGuardado.DG_DuchaFuncional;
+            DuchaFuncionalIzq = datosGuardado.DG_DuchaFuncionalIzq;
+            DuchaFuncionalDer = datosGuardado.DG_DuchaFuncionalDer;
+            ArmarioFuncionalBañoIzq = datosGuardado.DG_ArmarioFuncionalBañoIzq;
+            ArmarioFuncionalBañoDer = datosGuardado.DG_ArmarioFuncionalBañoDer;
             
             // LUCES
             LuzMesitaHabitacionOn = datosGuardado.DG_LuzMesitaHabitacionOn;
